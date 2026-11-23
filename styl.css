@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.strona {
+  min-height: 100vh;
+  padding-bottom: 30px;
+}
+
+.ciemna {
+  background-color: #151b2b;
+  color: white;
+}
+
+.jasna {
+  background-color: #eeeeee;
+  color: #222;
+}
+
+header {
+  background-color: #e67e22;
+  color: white;
+  padding: 15px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h2 {
+  margin: 0;
+}
+
+button {
+  background-color: #e67e22;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+header button {
+  background-color: #222;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.kontener {
+  width: 85%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.powitanie {
+  text-align: center;
+  padding: 50px 10px;
+}
+
+.powitanie h1 {
+  font-size: 45px;
+  color: #e67e22;
+}
+
+.powitanie h3 {
+  color: #e67e22;
+}
+
+.ciekawostka {
+  background-color: #e67e22;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 35px;
+}
+
+.samochody h2 {
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 13px;
+  border-radius: 6px;
+  border: 1px solid #aaa;
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+
+.lista-samochodow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.karta-samochodu {
+  background-color: #263248;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  border-bottom: 4px solid #e67e22;
+}
+
+.jasna .karta-samochodu {
+  background-color: white;
+  color: #222;
+  box-shadow: 0 2px 8px #0002;
+}
+
+.karta-samochodu h3 {
+  color: #e67e22;
+}
+
+.karta-samochodu p {
+  line-height: 1.5;
+}
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+  border-top: 1px solid #888;
+}
+
+@media (max-width: 600px) {
+  .kontener {
+    width: 92%;
+  }
+
+  header {
+    padding: 15px 4%;
+  }
+
+  .powitanie h1 {
+    font-size: 35px;
+  }
+}
